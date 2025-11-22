@@ -1,5 +1,5 @@
 const API_URL = "http://localhost:4000";
-
+const API_KEY = "asdfb_1243";
 export async function fetchOrders() {
   const res = await fetch(`${API_URL}/orders`);
   return res.json();
