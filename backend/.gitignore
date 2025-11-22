@@ -1,0 +1,42 @@
+# dependencies
+/node_modules/
+
+# optional npm cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# runtime files
+pids
+*.pid
+*.seed
+*.pid.lock
+*.log
+
+# environment variables
+.env
+.env.*.local
+
+# build output
+/dist/
+build/
+lib/
+*.tsbuildinfo
+
+# coverage
+coverage/
+.nyc_output/
+
+# IDEs and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# temp
+.tmp/
+.cache/
+
+# Docker compose override (local)
+docker-compose.override.yml

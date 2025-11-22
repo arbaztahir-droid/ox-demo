@@ -1,0 +1,168 @@
+:root {
+  --bg: #f7f9fc;
+  --sidebar-bg: #1f2937;
+  --card-bg: #ffffff;
+  --nav-bg: #ffffff;
+  --text-dark: #111827;
+  --accent: #2563eb;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg);
+  color: var(--text-dark);
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-card {
+  background: var(--card-bg);
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+.login-card input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.navbar {
+  background: var(--nav-bg);
+  height: 60px;
+  padding: 0 24px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.nav-left h3 {
+  margin: 0;
+  color: var(--text-dark);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-role {
+  background: var(--accent);
+  color: white;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 12px;
+}
+
+.logout-btn {
+  background: none;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dashboard-layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background: var(--sidebar-bg);
+  color: white;
+  min-height: calc(100vh - 60px);
+  padding-top: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px 24px;
+  cursor: pointer;
+  color: #d1d5db;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+  background: #374151;
+  color: white;
+}
+
+.main-content {
+  flex: 1;
+  padding: 24px;
+}
+
+.welcome-text {
+  margin-top: 0;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.orders-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.orders-table tr:hover {
+  background: #f9fafb;
+}
+
+.orders-table select {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: #000;
+}
